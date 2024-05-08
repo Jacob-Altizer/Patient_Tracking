@@ -1,0 +1,77 @@
+:root {
+    /* background colors */
+    --main-bg-color: #384248;
+    --btn-background-color: #5E8F92;
+
+    /* text colors */
+    --translucent-text-black: rgba( 0, 0, 0, .54);
+    --text-white: #CDCDCD;
+    --text-gray: #9A9A9A;
+    --text-gray-translucent: #e1e1e15d;
+
+    /* status colors */
+    --status-green: #89CB56;
+    --status-red: #FF0000;
+    --status-orange: #FF8F0B;
+    --status-yellow: #D4BF06;
+
+    /* physical table properties */
+    --row-height: 50px;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    padding-top: 2%;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    height: var(--row-height);
+}
+
+tbody > tr:nth-child(odd) {
+    backdrop-filter: brightness(1.2);
+}
+
+td {
+    color: var(--text-white);
+    font-size: larger;
+}
+
+.table-head {
+    color: var(--text-gray-translucent);
+    border-bottom: 2px solid #e1e1e15d;
+}
+
+.status {
+    font-size: medium;
+    font-weight: 600;
+    padding: 0px 18px 2px 18px;
+    border-radius: 20px;
+}
+
+.patient-lname, .current-location, .destination, .mot, .isolation {
+    font-weight: bold;
+}
+.standard-isolation {
+    font-weight: normal;
+}
+
+.status-nuetral {
+    background-color: gray;
+}
+.status-online {
+    background-color: var(--status-green);
+}
+.status-pending {
+    border: 2px solid rgb(155, 0, 0);
+}
+.status-busy {
+    background-color: var(--status-orange);
+}
+.status-dispatched {
+    background-color: var(--status-yellow);
+}

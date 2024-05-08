@@ -1,0 +1,77 @@
+html {
+  background-color: #384248;
+}
+
+:root {
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  /* background colors */
+  --main-bg-color: #384248;
+  --btn-background-color: #5E8F92;
+  --btn-bg-color-hover: #558183;
+  --btn-inset-shadow: #2b4142;
+
+  /* text colors */
+  --translucent-text-black: rgba( 0, 0, 0, .54);
+  --text-white: #CDCDCD;
+  --text-gray: #9A9A9A;
+
+  /* status colors */
+  --status-green: #74be3b;
+  --status-red: #FF0000;
+  --status-orange: #FF8F0B;
+  --status-yellow: #D4BF06;
+
+  /* jobs form physical properties */
+  --title-height: 50px;
+}
+
+.login-card {
+  margin-inline: auto;
+}
+
+.login-card-body {
+  border: 1px solid var(--translucent-text-black);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.566);
+  border-radius: 9px;
+}
+
+.card-title {
+  border-bottom: 1px solid #9a9a9a6d;
+  max-height: 50px;
+}
+
+.card-title > h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgb(188, 186, 186);
+}
+
+#username, #password {
+  max-width: 180px;
+}
+
+.username-label, .password-label {
+  color: var(--text-gray);
+}
+
+.password-row, .username-row {
+  margin: 8px;
+}
+
+.login-card button {
+  background-color: var(--btn-background-color);
+  color: var(--translucent-text-black);
+  max-width: 100px;
+  border-radius: 15px;
+  margin-top: 6px;
+  box-shadow: 2px 2px black;
+  font-weight: 600;
+}
+
+.login-card button:hover {
+  background-color: var(--btn-bg-color-hover);
+  box-shadow: 1px 1px black;
+}
